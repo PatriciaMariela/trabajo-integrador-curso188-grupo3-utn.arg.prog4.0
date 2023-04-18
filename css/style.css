@@ -1,0 +1,172 @@
+body{
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Releway', sans-serif;
+}
+/** Ir arriba **/
+.go-top{
+    position: fixed;
+    bottom: 100px;
+    right: -100%;
+    width: 50px;
+    height: 50px;
+    background: #ffff;
+    border:2px solid var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.go-top > span:hover{
+    color: var(--white);
+}
+.go-top:hover{
+    background: var(--red);
+    color:#fff;
+    border:2px solid var(--white);
+}
+.go-top > span{
+    font-size: 30px;
+    color:var(--black);
+}
+
+/** Efecto Skew **/
+.skew-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.skew-arriba{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 10vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    z-index:10;
+}
+
+/** Menu de Navegacion **/
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #ffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.menu .logo-box{
+    margin-left: 20px;
+}
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color:var(--black);
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container ul{
+    display: flex;
+}
+.menu .list-container ul li{
+    list-style: none;
+}
+.menu .list-container ul li a{
+    text-decoration: none;
+    margin:0px 10px;
+    padding:8px;
+    color:var(--black);
+    border-radius: 24px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.menu .list-container ul li a.activo{
+    background:var(--red);
+    color: #ffff;
+}
+.menu .list-container ul li a:hover{
+    background:var(--red);
+    color: #ffff;
+}
+
+.btn-menu > .fa-bars{
+    display: none;
+}
+
+/** Menu de Navegacion **/
+
+/** IMG - Header **/
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h1{
+    font-size: 50px;
+    color:#fff;
+    font-weight: 200;
+}
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border:none;
+    margin-top: 5px;
+}
+.img-header .welcome p{
+    font-size: 20px;
+    color: #ffff;
+    margin-top: 20px;
+}
+.img-header .welcome > button{
+    width: 170px;
+    height: 40px;
+    background:var(--red);
+    border-radius: 24px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color:#fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img-header .welcome > button:hover{
+    background: var(--blue);
+}
+
+/** IMG - Header **/
